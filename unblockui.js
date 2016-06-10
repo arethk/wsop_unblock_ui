@@ -4,7 +4,7 @@ var blockedui = document.getElementById("wsopContentGatingContainer");
 // check if it was found
 if (blockedui !== null) {
     // remove the div
-    blockedui.remove()
+    blockedui.remove();
 
     // set the overflow of body to auto
     document.body.style.overflow = "auto";
