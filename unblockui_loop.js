@@ -34,5 +34,5 @@ if (isUIBlocked === false) {
 			// clear the interval
 			window.clearInterval(blockedUiInterval);
 		}
-	}, 1000);
+	}, 333);
 }
