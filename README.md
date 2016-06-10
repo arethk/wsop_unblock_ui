@@ -5,10 +5,17 @@ JavaScript code to unblock the black popup when you look at tournament results
 Follow these steps (works on chrome and Firefox):
 
 1.) press CTRL SHIFT i
+
 2.) click 'console'
+
 3.) paste the code from unblockui.js
+
 4.) press enter
+
 5.) Jump for joy
+
+
+------------------
 
 
 Optional: You can run the code in the inject script chrome addon found here https://chrome.google.com/webstore/detail/injectcode/flhghpihapijancfhnicbnjifdodohpi
