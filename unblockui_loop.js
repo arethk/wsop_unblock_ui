@@ -12,7 +12,7 @@ var clearBlockedUIFunction = function() {
 		document.body.style.overflow = "auto";
 
 		// reallow right clicking
-		document.body.oncontextmenu = "";
+		document.body.oncontextmenu = null;
 
 		// return true on success
 		return true;
