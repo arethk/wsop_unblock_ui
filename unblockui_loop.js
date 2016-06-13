@@ -24,13 +24,18 @@ var clearBlockedUIFunction = function() {
 // run the function once and store the result
 var isUIBlocked = clearBlockedUIFunction();
 
-// if the ui wasnt blocked, setup an interval to check every second for it
+// if the ui wasnt blocked, setup an interval to check every 333 ms for it
 if (isUIBlocked === false) {
+	// setup a counter to stop the script, just in case
+	var counter = 0;
+	// setup up the interval
 	var blockedUiInterval = setInterval(function(){
+		// increment the counter
+		counter++;
 		// run the block
 		isUIBlocked = clearBlockedUIFunction();
 		// if the block was successful remove the interval
-		if (isUIBlocked === true) {
+		if (isUIBlocked === true || counter > 1000) {
 			// clear the interval
 			window.clearInterval(blockedUiInterval);
 		}
